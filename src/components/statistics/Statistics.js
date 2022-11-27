@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import { StatisticsItem } from './StatisticsItem';
 
 export const Statistics = ({ data }) => {
@@ -14,4 +16,12 @@ export const Statistics = ({ data }) => {
       </ul>
     </section>
   );
+};
+
+Statistics.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+    })
+  ).isRequired,
 };
