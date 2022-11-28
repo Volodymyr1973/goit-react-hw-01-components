@@ -6,11 +6,11 @@ import { TransactionHistoryRow } from './TransactionHistoryRow';
 export const TransactionHistory = ({ transactions }) => {
   return (
     <table className={css.transaction_history}>
-      <thead>
+      <thead className={css.table_head}>
         <tr>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
+          <th className={css.cell_head}>Type</th>
+          <th className={css.cell_head}>Amount</th>
+          <th className={css.cell_head}>Currency</th>
         </tr>
       </thead>
 
